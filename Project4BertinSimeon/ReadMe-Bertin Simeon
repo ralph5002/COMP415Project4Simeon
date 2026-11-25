@@ -1,0 +1,22 @@
+Economic Data Loader (Salaries, Rent, and Home Price Index)
+
+How to Use the Program:
+-Install the proper dependencies for the program to run properly
+-Upload the relevant data files for the program to read and handle
+
+Decisions:
+- States consisted of the official 50 states recognized by the US along with their recognized territories
+-Salaries consist of data from the BLSsalaryDara2025.xlsx file (Occupations along with wage estimates)
+-Rent prices consist of rents for unit based on a metric of per 10^ft. Data is from RentPer10SquareFt2026.xlsx.
+- Last but not least there is a similar handling system for home prices consisting of homepriceindex.xlsx.
+
+Relevant Oddities:
+- Certain territories were skipped to preserve foreign-key integrity
+-Non-numerical values were suppressed and designated as Null
+-Multi-State data was split into separate rows to account for shared names
+-Multiple levels of filtering was done for Home Price Data to account for current year and proper location identification/handling
+
+Incomplete Aspects:
+-Similar to my last project my code is giving me exit status 2. This is likely an issue with my computer so hopefully it will work on yours
+
+
